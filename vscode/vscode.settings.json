@@ -1,0 +1,12 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "editor.fontSize": 13,
+  "editor.snippetSuggestions": "top",
+  "editor.tabSize": 2,
+  "telemetry.enableTelemetry": false,
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "One Dark Pro Vivid",
+
+  // Plugin settings
+  "gitlens.blame.line.enabled": false
+}
