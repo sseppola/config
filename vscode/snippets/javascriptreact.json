@@ -1,21 +1,157 @@
 {
-/*
-  // Place your snippets for JavaScript React here. Each snippet is defined under a snippet name and has a prefix, body and 
-  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
-  // same ids are connected.
-  // Example:
-*/
-  "Functional React Component": {
-    "prefix": "rfunc",
-    "body": [
-      "import React from 'react';",
-      "import PropTypes from 'prop-types';",
-      "import { connect } from 'react-redux';",
-      "export default function $1($2) {",
-      "  return ($3);",
-      "}"
-    ],
-    "description": "Functional react component"
+  /*
+    // Place your snippets for JavaScript React here. Each snippet is defined under a snippet name and has a prefix, body and 
+    // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+    // same ids are connected.
+    // Example:
+  */
+    "Functional React Component": {
+      "prefix": "rfunc",
+      "body": [
+        "import React from 'react';",
+        "import PropTypes from 'prop-types';",
+        "import { connect } from 'react-redux';",
+        "export default function $1($2) {",
+        "  return ($3);",
+        "}"
+      ],
+      "description": "Functional react component"
+    },
+    "CreateReactClass": {
+      "prefix": "crReactClass",
+      "body": [
+        "import React from 'react';",
+        "import PropTypes from 'prop-types';",
+        "import createReactClass from 'create-react-class';",
+        "import { connect } from 'react-redux';",
+        "const $1 = createReactClass({",
+        "  propTypes: {},",
+        "  render() { return <div></div> }",
+        "})",
+        "export default $1"
+      ],
+      "description": "Create React Class"
+    },
+    "import connect from react-redux": {
+      "prefix": "imconn",
+      "body": [
+        "import { connect } from 'react-redux"
+      ],
+      "description": "Import connect from react-redux"
+    },
+    "import create-react-class": {
+      "prefix": "imcract",
+      "body": [
+        "import createReactClass from 'create-react-class';"
+      ],
+      "description": "Import create-react-class"
+    },
+    "import React": {
+      "prefix": "imreact",
+      "body": [
+        "import React from 'react'"
+      ],
+      "description": "Import React"
+    },
+    "import PropTypes": {
+      "prefix": "imPropTypes",
+      "body": [
+        "import PropTypes from 'prop-types'"
+      ],
+      "description": "Import PropTypes"
+    },
+    "React constructor lifecycle": {
+      "prefix": "constructor",
+      "body": [
+        "constructor(props) {",
+        "  super(props)",
+        "}"
+      ],
+      "description": "constructor(props)"
+    },
+    "React componentWillMount lifecycle": {
+      "prefix": "componentWillMount",
+      "body": [
+        "componentWillMount() {}"
+      ],
+      "description": "componentWillMount()"
+    },
+    "React componentDidMount lifecycle": {
+      "prefix": "componentDidMount",
+      "body": [
+        "componentDidMount() {}"
+      ],
+      "description": "componentDidMount()"
+    },
+    "React componentWillReceiveProps lifecycle": {
+      "prefix": "componentWillReceiveProps",
+      "body": [
+        "componentWillReceiveProps(nextProps) {}"
+      ],
+      "description": "componentWillReceiveProps(nextProps)"
+    },
+    "React shouldComponentUpdate lifecycle": {
+      "prefix": "shouldComponentUpdate",
+      "body": [
+        "shouldComponentUpdate(nextProps, nextState) {}"
+      ],
+      "description": "shouldComponentUpdate(nextProps, nextState) -> bool"
+    },
+    "React componentWillUpdate lifecycle": {
+      "prefix": "componentWillUpdate",
+      "body": [
+        "componentWillUpdate(nextProps, nextState) {}"
+      ],
+      "description": "componentWillUpdate(nextProps, nextState) -> void"
+    },
+    "React componentDidUpdate lifecycle": {
+      "prefix": "componentDidUpdate",
+      "body": [
+        "componentDidUpdate(prevProps, prevState) {}"
+      ],
+      "description": "componentDidUpdate(prevProps, prevState) -> void"
+    },
+    "React componentWillUnmount lifecycle": {
+      "prefix": "componentWillUnmount",
+      "body": [
+        "componentWillUnmount() {}"
+      ],
+      "description": "componentWillUnmount() -> void"
+    },
+    "React componentDidCatch lifecycle": {
+      "prefix": "componentDidCatch",
+      "body": [
+        "componentDidCatch(error, info) {}"
+      ],
+      "description": "componentDidCatch(error, info) -> void"
+    },
+    "console.log": {
+      "prefix": "log",
+      "body": [
+        "console.log($1)"
+      ],
+      "description": "Console log"
+    },
+    "console.warn": {
+      "prefix": "warn",
+      "body": [
+        "console.warn($1)"
+      ],
+      "description": "Console warning"
+    },
+    "console.error": {
+      "prefix": "error",
+      "body": [
+        "console.error($1)"
+      ],
+      "description": "Console error"
+    },
+    "inspect": {
+      "prefix": "inspect",
+      "body": [
+        "console.log(require('util').inspect($1, { depth: null }));"
+      ],
+      "description": "inspect object in node.js"
+    }
   }
-}
