@@ -1,0 +1,45 @@
+# GNU core utilities (those that come with OS X are outdated)
+coreutils
+moreutils
+
+# GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed
+findutils
+
+# GNU `sed`, overwriting the built-in `sed`
+gnu-sed --with-default-names
+
+
+# Bash 4
+# Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`.
+bash
+bash-completion
+
+# ZSH
+zsh
+zsh-completions
+
+# Install more recent versions of some OS X tools
+vim --with-override-system-vi
+homebrew/dupes/nano
+homebrew/dupes/grep
+homebrew/dupes/openssh
+homebrew/dupes/screen
+
+
+# git
+git
+diff-so-fancy
+
+# Node
+nvm
+
+# Databases
+postgresql
+
+# Misc
+# mtr - ping & traceroute. best.
+mtr
+
+nginx
+
+imagemagick --with-webp

@@ -1,3 +1,12 @@
+# Ask for the administrator password upfront
+sudo -v
+
+# Install Homebrew
+if test ! $(which brew)
+then
+  echo " → Installing Homebrew for package management..."
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
 brew update
 brew upgrade
 
@@ -58,3 +67,7 @@ brew cask install visual-studio-code
 ## Browsers
 brew cask install firefox
 brew cask install google-chrome
+
+brew cask install caskroom/fonts/font-fira-code
+brew cask install caskroom/fonts/font-fira-sans
+brew cask install caskroom/cask/neo4j

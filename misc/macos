@@ -1,0 +1,78 @@
+#!/usr/bin/env bash
+
+# Inspired/stolen from: https://github.com/diessica/dotfiles/blob/master/misc/macos
+
+
+# Ask for the administrator password upfront
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until `.osx` has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+# --------------–-------–--------–--------–-------–--–-----
+# System interface and behaviour
+# --------------–-------–--------–--------–-------–--–-----
+# Use Dark theme
+# defaults write ~/Library/Preferences/.GlobalPreferences AppleInterfaceStyle Dark
+
+# Disable the sound effects on boot
+sudo nvram SystemAudioVolume=" "
+
+
+# Save to disk (not to iCloud) by default
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+
+# Disable smart quotes as they're annoying when typing code
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+
+# Disable smart dashes as they're annoying when typing code
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+
+
+# --------------–-------–--------–--------–-------–--–-----
+# SSD-specific tweaks
+# --------------–-------–--------–--------–-------–--–-----
+# Disable local Time Machine snapshots
+sudo tmutil disablelocal
+
+# Disable hibernation (speeds up entering sleep mode)
+sudo pmset -a hibernatemode 0
+
+# Remove the sleep image file to save disk space
+sudo rm /private/var/vm/sleepimage
+# Create a zero-byte file instead…
+sudo touch /private/var/vm/sleepimage
+# …and make sure it can't be rewritten
+sudo chflags uchg /private/var/vm/sleepimage
+
+# Disable the sudden motion sensor as it's not useful for SSDs
+sudo pmset -a sms 0
+
+
+
+# --------------–-------–--------–--------–-------–--–-----
+# Dock, Dashboard and Menu Bar
+# --------------–-------–--------–--------–-------–--–-----
+# Speed up Mission Control animations
+defaults write com.apple.dock expose-animation-duration -float 0.1
+
+# Disable Dashboard
+defaults write com.apple.dashboard mcx-disabled -bool true
+# Don't show Dashboard as a Space
+defaults write com.apple.dock dashboard-in-overlay -bool true
+
+# Don't automatically rearrange Spaces based on most recent use
+defaults write com.apple.dock mru-spaces -bool false
+
+# Make Dock icons of hidden applications translucent
+defaults write com.apple.dock showhidden -bool true
+
+
+# --------------–-------–--------–--------–-------–--–-----
+#  Mac App Store
+# --------------–-------–--------–--------–-------–--–-----
+# Enable the WebKit Developer Tools in the Mac App Store
+defaults write com.apple.appstore WebKitDeveloperExtras -bool true
+
+# Enable Debug Menu in the Mac App Store
+defaults write com.apple.appstore ShowDebugMenu -bool true
