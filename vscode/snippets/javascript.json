@@ -38,11 +38,36 @@
       ],
       "description": "Functional react component"
     },
+    "React Class": {
+      "prefix": "rclass",
+      "body": [
+        "import React from 'react';",
+        "import PropTypes from 'prop-types';",
+        "import { connect } from 'react-redux';",
+        "export default class $1 extends React.Component {",
+        "  constructor(props) {",
+        "    super(props)",
+        "  }",
+        "  render() {",
+        "    return <div></div>",
+        "  }",
+        "}",
+        "$1.propTypes = {}"
+      ],
+      "description": "Create React Class"
+    },
     "inspect": {
       "prefix": "inspect",
       "body": [
         "console.log(require('util').inspect($1, { depth: null }));"
       ],
       "description": "inspect object in node.js"
+    },
+    "imReactNative": {
+      "prefix": "imReactNative",
+      "body": [
+        "import { StyleSheet, Text } from 'react-native'"
+      ],
+      "description": "import React Native"
     }
   }

@@ -6,6 +6,24 @@
     // same ids are connected.
     // Example:
   */
+  "React Class": {
+    "prefix": "rclass",
+    "body": [
+      "import React from 'react';",
+      "import PropTypes from 'prop-types';",
+      "import { connect } from 'react-redux';",
+      "export default class $1 extends React.Component {",
+      "  constructor(props) {",
+      "    super(props)",
+      "  }",
+      "  render() {",
+      "    return <div></div>",
+      "  }",
+      "}",
+      "$1.propTypes = {}"
+    ],
+    "description": "Create React Class"
+  },
     "Functional React Component": {
       "prefix": "rfunc",
       "body": [

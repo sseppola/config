@@ -1,0 +1,180 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontSize": 14,
+    "editor.minimap.enabled": false,
+    "editor.snippetSuggestions": "top",
+    "editor.tabSize": 2,
+    "telemetry.enableTelemetry": false,
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Nord",
+    "javascript.referencesCodeLens.enabled": true,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+  
+    "files.associations": {
+      "*.react.js": "javascriptreact",
+      "*.jsx": "javascriptreact"
+    },
+
+    "[javascript]": {
+      "editor.formatOnSave": true,
+    },
+    "[javascriptreact]": {
+      "editor.formatOnSave": true
+    },
+    "[typescript]": {
+      "editor.formatOnSave": true
+    },
+    "[typescriptreact]": {
+      "editor.formatOnSave": true
+    },
+
+  
+    // Plugin settings
+    "editor.tokenColorCustomizations": {
+      "[Nord]": {
+        "textMateRules": [
+          {
+            "name": "Types",
+            "scope": [
+              "source entity.name.type.interface",
+              "source entity.name.type.module",
+              "source meta.interface entity.name.type",
+              "source meta.type.annotation entity.name.type",
+              "source meta.return.type entity.name.type",
+              "source keyword.control.as",
+              "source meta.interface entity.other.inherited-class",
+              // "source entity.name.type.parameters",
+              // "source.ts meta.type.parameters.ts",
+              // "source meta.return.type",
+              // "source.ts entity.name.type",
+              // "source.tsx entity.name.type",
+              "source.ts support.type",
+              "source.tsx support.type",
+              "source.tsx support.class.dom.tsx",
+              "source.tsx meta.type.annotation.tsx",
+              "source.tsx meta.type.annotation.tsx punctuation",
+
+            ],
+            "settings": {
+              "foreground": "#b48ead"
+              // "foreground": "#d08770"
+            }
+          },
+          {
+            "name": "Extended type",
+            "scope": [
+              "entity.other.inherited-class"
+            ],
+            "settings": {
+              "fontStyle": "bold"
+            }
+          },
+          {
+            "name": "Braces, variables color",
+            "scope": [
+              "source.ts meta.brace.square.ts"
+            ],
+            "settings": {
+              "foreground": "#D8DEE9"
+            }
+          },
+          {
+            "name": "Values color",
+            "scope": [
+              "source constant.numeric.decimal",
+              "source constant.language.boolean",
+            ],
+            "settings": {
+              "foreground": "#81A1C1"
+            }
+          },
+          {
+            "name": "Yellow constant highlight",
+            "scope": [
+              "source.ts variable.other.constant.ts",
+              "source.ts variable.other.constant.property.ts",
+              "source.tsx variable.language.this.tsx",
+              "source.ts support.variable.object.node",
+              "source.ts support.constant.json",
+              "source.tsx support.constant.json",
+              "source support.class.node",
+            ],
+            "settings": {
+              "foreground": "#ebcb8b"
+            }
+          },
+          {
+            "name": "String tokens",
+            "scope": [
+              "source.ts punctuation.definition.string.template.begin.ts",
+              "source.ts punctuation.definition.string.template.end.ts",
+              "source.ts punctuation.definition.string.begin.ts",
+              "source.ts punctuation.definition.string.end.ts",
+              "source.tsx punctuation.definition.string.template.begin.tsx",
+              "source.tsx punctuation.definition.string.template.end.tsx",
+              "source.tsx punctuation.definition.string.begin.tsx",
+              "source.tsx punctuation.definition.string.end.tsx",
+              "source.tsx punctuation.definition.string.begin.tsx",
+              "source.tsx punctuation.definition.string.end.tsx",
+            ],
+            "settings": {
+              "foreground": "#a3be8c"
+            }
+          },
+          {
+            "name": "Template expression characters highlight",
+            "scope": [
+              "punctuation.definition.template-expression.begin",
+              "punctuation.definition.template-expression.end",
+
+            ],
+            "settings": {
+              "foreground": "#88C0D0"
+            }
+          },
+          {
+            "name": "Control flow",
+            "scope": [
+              "keyword.control.flow",
+              "keyword.control.trycatch",
+              "keyword.operator.logical",
+              "keyword.control.conditional",
+              "storage.modifier.async",
+              "storage.type.function.arrow"
+
+            ],
+            "settings": {
+              "foreground": "#bf616a"
+            }
+          },
+          {
+            "name": "TSX element",
+            "scope": [
+              "entity.name.type.class",
+              "source.tsx support.class",
+              // "source.ts entity.name.type"
+
+            ],
+            "settings": {
+              "foreground": "#d08770"
+            }
+          },
+          {
+            "name": "Functions or classes",
+            "scope": [
+              "entity.name.type",
+
+            ],
+            "settings": {
+              "foreground": "#88C0D0"
+            }
+          }
+        ],
+        // "types": "#e5c07b",
+        // "variables": "#FF0000",
+        // "variable.other.constant": { "foreground": "#e5c07b" }
+          // "variable.other.constant.property.ts": "#229977"
+      }
+  },
+  }
