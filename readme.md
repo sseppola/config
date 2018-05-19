@@ -4,6 +4,11 @@ This was copied and then tweaked from [Diéssica Gurskas' dotfiles](https://gith
 ## Note
 Not every file in this repository is being directly used. Some files, such as editor settings, are here for backup purposes.
 
+## TODOS:
+ - [ ] Keybindings (eg. Alfred)
+ - [ ] Set up BTT
+
+
 ## let's go
 **1.** Check for software updates.
 ```sh

@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# Inspired/stolen from: https://github.com/diessica/dotfiles/blob/master/misc/macos
-
-
 # Ask for the administrator password upfront
 sudo -v
 
