@@ -23,3 +23,5 @@ echo "→ Installing fonts..."
 brew tap caskroom/fonts
 # Install all fonts listed in the fontfile
 brew cask install $(cat brew/fontfile|grep -v "#")
+
+source vscode/setup-vscode.sh

@@ -1,0 +1,27 @@
+[hub]
+  protocol = https
+
+[alias]
+  # --------------–-------–--------–--------–-------–--–-----
+  # Faster commands
+  # --------------–-------–--------–--------–-------–--–-----
+  co = checkout
+  cob = checkout -b
+
+  # --------------–-------–--------–--------–-------–--–-----
+  # More intuitive commands
+  # --------------–-------–--------–--------–-------–--–-----
+  # List tags
+  tags = tag -l
+  # List branches
+  branches = branch -a
+  # Reset (uncomitted) changes
+  abort = reset --hard HEAD
+  # Remove last commit
+  uncommit = reset HEAD~1
+  # Rewrite last commit message
+  recommit = commit --amend -m
+
+[core]
+  excludesfile = ~/.gitignore_global
+  pager = diff-so-fancy | less --tabs=4 -RFX

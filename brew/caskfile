@@ -1,11 +1,20 @@
 # Casks
-iterm2
 java
 
 ## Editors
-atom
 visual-studio-code
 
 ## Browsers
 firefox
 google-chrome
+
+# Communication tools
+skype
+slack
+
+## Util
+alfred
+bettertouchtool
+1password
+daisydisk
+iterm2
