@@ -7,6 +7,8 @@ Not every file in this repository is being directly used. Some files, such as ed
 ## TODOS:
  - [ ] Keybindings (eg. Alfred)
  - [ ] Set up BTT
+ - [ ] Get rid of `is already installed` warnings
+ - [ ] Why does chrome throw off the brew install process? The rest of the list is not installed
 
 
 ## let's go
