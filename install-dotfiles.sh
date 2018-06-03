@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+NODE_VERSION=6
+
 # Install Homebrew
 if test ! $(which brew)
 then
@@ -7,11 +9,6 @@ then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-
-# Init nvm directory
-if [ ! -d "$HOME/.nvm" ]; then
-  mkdir ~/.nvm
-fi
 
 echo "→ Installing packages using Homebrew..."
 brew install $(cat brew/brewfile|grep -v "#")
@@ -25,11 +22,25 @@ ln -s "$(pwd)/dotfiles/git/ignore_global" ~/.gitignore_global
 
 
 # Install nvm, node and global npm packages
-echo "→ Installing Node.js stable."
-nvm install stable
-echo "→ Installing npm packages..."
-npm install -g $(cat misc/npm_globals|grep -v "#")
-ln -s "$(pwd)/dotfiles/.npmrc" ~/.npmrc
+if [ ! -f ~/.nvm/nvm.sh ]; then
+  echo "→ Installing Node Version Manager (NVM)"
+  mkdir -p ~/.nvm
+  ln -s "$(pwd)/dotfiles/.nvmrc" ~/.nvmrc
+  curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+if [ "$(nvm current)" == "none" ]; then
+  echo "→ Installing Node Version Manager (NVM)";
+  nvm install $NODE_VERSION
+  nvm alias default $NODE_VERSION
+
+  echo "→ Installing npm packages..."
+  npm install -g $(cat misc/npm_globals|grep -v "#")
+  ln -s "$(pwd)/dotfiles/.npmrc" ~/.npmrc
+fi
 
 # Setup and configure ZSH
 ln -s "$(pwd)/dotfiles/.zshrc" ~/.zshrc

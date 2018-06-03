@@ -2,7 +2,9 @@
 
 # Set default shell to ZSH
 # https://rick.cogley.info/post/use-homebrew-zsh-instead-of-the-osx-default/
-sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
+if [ ! "$(which zsh)" == "/usr/local/bin/zsh" ]; then
+  sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
+fi
 
 
 #### Download Prezto ####

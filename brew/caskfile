@@ -1,5 +1,7 @@
 # Casks
 java
+react-native-debugger
+google-cloud-sdk
 
 ## Editors
 visual-studio-code
@@ -18,3 +20,5 @@ bettertouchtool
 1password
 daisydisk
 iterm2
+sketch
+imageoptim

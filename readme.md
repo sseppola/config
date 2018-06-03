@@ -9,6 +9,8 @@ Not every file in this repository is being directly used. Some files, such as ed
  - [ ] Set up BTT
  - [ ] Get rid of `is already installed` warnings
  - [ ] Why does chrome throw off the brew install process? The rest of the list is not installed
+ - [ ] Enable nightshift
+ - [ ] gem install cocoapods (or do it on project basis?)
 
 
 ## let's go

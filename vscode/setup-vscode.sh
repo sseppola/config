@@ -14,5 +14,7 @@ code --install-extension eg2.tslint
 code --install-extension esbenp.prettier-vscode
 code --install-extension mikestead.dotenv
 code --install-extension mrmlnc.vscode-json5
+code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension DavidAnson.vscode-markdownlint
 
-rsync -a ./codeConf/ $HOME/Library/Application\ Support/Code/User/
+rsync -a ./vscode/codeConf/ $HOME/Library/Application\ Support/Code/User/

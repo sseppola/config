@@ -26,5 +26,11 @@
   excludesfile = ~/.gitignore_global
   pager = diff-so-fancy | less --tabs=4 -RFX
 
+[merge]
+  tool = opendiff
+
+# [diff]
+#   external
+
 [include]
   path = ~/.gitlocal

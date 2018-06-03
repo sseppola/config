@@ -39,6 +39,7 @@ postgresql
 # Misc
 # mtr - ping & traceroute. best.
 mtr
+jq
 
 nginx
 
