@@ -34,6 +34,7 @@ $ sh ./install-apps
 **4.** Install dotfiles (see [brewfile](brew/brewfile)).
 
 ```sh
+$ sh ./install-zsh.sh
 $ sh ./install-dotfiles
 ```
 
