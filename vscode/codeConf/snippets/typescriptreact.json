@@ -1,10 +1,4 @@
 {
-/*
-	// Place your snippets for TypeScript React here. Each snippet is defined under a snippet name and has a prefix, body and 
-	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
-	// same ids are connected.
-	// Example:*/
 	"Print to console": {
 		"prefix": "log",
 		"body": [
@@ -16,34 +10,34 @@
 	"React.Component": {
 		"prefix": "rComp",
 		"body": [
-"import * as React from 'react';",
-"",
-"interface IExampleComponentProps {}",
-"",
-"interface IExampleComponentState {}",
-"",
-"const initialState: IExampleComponentState = {};",
-"",
-"export class ExampleComponent extends React.Component<IExampleComponentProps, IExampleComponentState> {",
-"",
-"  static defaultProps = {};",
-"",
-"  constructor(props: IExampleComponentProps) {",
-"    super(props);",
-"    this.state = initialState;",
-"  }",
-"",
-"  public render(): JSX.Element {",
-"    return (",
-"      <div>",
-"        <div>Hello, world!</div>",
-"      </div>",
-"    );",
-"  }",
-"}",
-"",
-"export default ExampleComponent;"
-],
+			"interface Props {}",
+			"export class Component extends React.Component<Props> {",
+			"  render() {",
+			"    return null;",
+			"  }",
+			"}"
+		],
 		"description": "React.Component"
 	},
+	"React.StatelessComponent": {
+		"prefix": "rStateless",
+		"body": [
+			"import * as React from 'react';",
+			"",
+			"interface Props {}",
+			"",
+			"export default function(props: Props) {",
+			"  return null;",
+			"}",
+			"",
+		],
+		"description": "React.StatelessComponent"
+	},
+	"Import react": {
+		"prefix": "imReact",
+		"body": [
+			"import * as React from 'react';"
+		],
+		"description": "Import react"
+	}
 }
