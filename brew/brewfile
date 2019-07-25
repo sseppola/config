@@ -40,7 +40,10 @@ postgresql
 # mtr - ping & traceroute. best.
 mtr
 jq
+wget
 
 nginx
 
 imagemagick --with-webp
+hazel
+tripmode

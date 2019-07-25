@@ -13,6 +13,7 @@ google-chrome
 # Communication tools
 skype
 slack
+caprine
 
 ## Util
 alfred
@@ -20,5 +21,6 @@ bettertouchtool
 1password
 daisydisk
 iterm2
+ngrok
 sketch
 imageoptim
