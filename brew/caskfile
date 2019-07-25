@@ -1,27 +1,44 @@
 # Casks
+
+## Editors and developer tools
+visual-studio-code
+insomnia
+iterm2
+ngrok
 java
 react-native-debugger
 google-cloud-sdk
+android-studio
 
-## Editors
-visual-studio-code
+
+## Design tools
+sketch
+imageoptim
+
 
 ## Browsers
 firefox
 google-chrome
+tor-browser
+
+
+## File tools
+daisydisk
+onedrive
+hazel
+carbon-copy-cloner
+
 
 # Communication tools
 skype
 slack
 caprine
 
+
 ## Util
 alfred
 bettertouchtool
 1password
-daisydisk
-iterm2
-ngrok
-sketch
-imageoptim
-onedrive
+tripmode
+spotify
+notion

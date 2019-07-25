@@ -48,5 +48,3 @@ wget
 nginx
 
 imagemagick --with-webp
-hazel
-tripmode
