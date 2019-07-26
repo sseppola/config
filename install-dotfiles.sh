@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-NODE_VERSION=6
+NODE_VERSION=8
 
 # Install Homebrew
 if test ! $(which brew)
@@ -8,10 +8,6 @@ then
   echo " → Installing Homebrew for package management..."
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
-
-
-echo "→ Installing packages using Homebrew..."
-brew install $(cat brew/brewfile|grep -v "#")
 
 
 echo "→ Configuring Git..."

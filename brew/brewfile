@@ -6,7 +6,7 @@ moreutils
 findutils
 
 # GNU `sed`, overwriting the built-in `sed`
-gnu-sed --with-default-names
+gnu-sed
 
 
 # Bash 4
@@ -19,11 +19,11 @@ zsh
 zsh-completions
 
 # Install more recent versions of some OS X tools
-vim --with-override-system-vi
-homebrew/dupes/nano
-homebrew/dupes/grep
-homebrew/dupes/openssh
-homebrew/dupes/screen
+# vim --with-override-system-vi
+#homebrew/dupes/nano
+#homebrew/dupes/grep
+#homebrew/dupes/openssh
+#homebrew/dupes/screen
 
 
 # git
@@ -47,4 +47,4 @@ wget
 
 nginx
 
-imagemagick --with-webp
+# imagemagick --with-webp

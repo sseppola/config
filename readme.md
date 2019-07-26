@@ -5,12 +5,13 @@ This was copied and then tweaked from [Diéssica Gurskas' dotfiles](https://gith
 Not every file in this repository is being directly used. Some files, such as editor settings, are here for backup purposes.
 
 ## TODOS:
+ - [ ] HammerSpoon config
+ - [ ] https://github.com/technicalpickles/homesick
  - [ ] Keybindings (eg. Alfred)
  - [ ] Set up BTT
  - [ ] Get rid of `is already installed` warnings
- - [ ] Why does chrome throw off the brew install process? The rest of the list is not installed
  - [ ] Enable nightshift
- - [ ] gem install cocoapods (or do it on project basis?)
+
 
 
 ## let's go
@@ -25,17 +26,18 @@ $ git clone https://github.com/sseppola/config.git ~/config
 $ cd ~/config
 ```
 
+**3.** Install and configure CLI tools
+```sh
+$ sh ./install-cli-tools.sh
+$ sh ./configure-zsh.sh
+$ sh ./install-dotfiles.sh
+```
+
+
 **3.** Install Mac applications (see [caskfile](brew/caskfile)) and fonts (see [fontfile](brew/fontfile)).
 
 ```sh
-$ sh ./install-apps
-```
-
-**4.** Install dotfiles (see [brewfile](brew/brewfile)).
-
-```sh
-$ sh ./install-zsh.sh
-$ sh ./install-dotfiles
+$ sh ./install-apps.sh
 ```
 
 **5.** Tell Git who you are.
