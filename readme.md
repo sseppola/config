@@ -12,7 +12,10 @@ Not every file in this repository is being directly used. Some files, such as ed
  - [ ] Get rid of `is already installed` warnings
  - [ ] Enable nightshift
 
-
+<!-- Inspiration for next time:
+- https://github.com/paulmillr/dotfiles
+- https://github.com/lukechilds/zsh-nvm
+-->
 
 ## let's go
 **1.** Check for software updates.

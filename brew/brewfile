@@ -34,7 +34,7 @@ diff-so-fancy
 nvm
 
 # Python
-pyenv
+pipenv
 
 # Databases
 postgresql
