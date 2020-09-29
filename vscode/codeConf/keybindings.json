@@ -7,5 +7,9 @@
   {
     "key": "ctrl+shift+l",
     "command": "editor.action.transformToLowercase"
-  }
+  },
+  {
+    "key": "alt+shift+n",
+    "command": "vscodeMarkdownNotes.newNote",
+  },
 ]

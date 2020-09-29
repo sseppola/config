@@ -3,39 +3,96 @@
   "editor.fontSize": 14,
   "editor.minimap.enabled": false,
   "editor.snippetSuggestions": "top",
-  "editor.tabSize": 2,
+  "editor.maxTokenizationLineLength": 80000,
   "files.defaultLanguage": "markdown",
-  "telemetry.enableTelemetry": false,
-  "window.zoomLevel": -1,
-  "workbench.colorTheme": "Night Owl",
+  "telemetry.enableTelemetry": false, 
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "Bluloco Light Italic",
+  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+  "search.quickOpen.history.filterSortOrder": "recency",
+  "sort-imports.on-save": false,
+  "sort-imports.default-sort-style": "module",
+  "editor.tabSize": 2,
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  
   "javascript.referencesCodeLens.enabled": true,
-  "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "Fira Code, Inconsolata, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
-  "editor.gotoLocation.multiple": "goto",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true
+  },
 
   "files.associations": {
     "*.react.js": "javascriptreact",
-    "*.jsx": "javascriptreact"
+    "*.jsx": "javascriptreact",
+    "*.svelte": "html",
+    "*.pcss": "postcss",
+    "Appfile": "ruby",
+    "Fastfile": "ruby",
+    "Matchfile": "ruby",
+    "*.css": "postcss",
+    "Snapfile": "ruby"
+  },
+  "workbench.editorAssociations": [
+    {
+      "viewType": "hexEditor.hexedit",
+      "filenamePattern": "*.hex"
+    }
+  ],
+
+  "emmet.includeLanguages": {
+    "postcss": "css"
   },
 
+  "prettier.requireConfig": true,
   "[javascript]": {
     "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[javascriptreact]": {
     "editor.formatOnSave": true
   },
   "[typescript]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "javascript.preferences.importModuleSpecifier": "relative",
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+  },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.tsserver.useSeparateSyntaxServer": false,
+  "workbench.preferredDarkColorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.preferredLightColorTheme": "Bluloco Light Italic",
+  "window.autoDetectColorScheme": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "python.defaultInterpreterPath": "python3",
+  "terminal.integrated.shell.osx": "/bin/zsh"
 }
