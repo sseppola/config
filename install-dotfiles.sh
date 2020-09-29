@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-NODE_VERSION=8
+NODE_VERSION=12
 
 # Install Homebrew
 if test ! $(which brew)
@@ -22,7 +22,7 @@ if [ ! -f ~/.nvm/nvm.sh ]; then
   echo "→ Installing Node Version Manager (NVM)"
   mkdir -p ~/.nvm
   ln -s "$(pwd)/dotfiles/.nvmrc" ~/.nvmrc
-  curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+  curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.36.0/install.sh | bash
 fi
 
 export NVM_DIR="$HOME/.nvm"

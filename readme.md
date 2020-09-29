@@ -31,8 +31,8 @@ $ cd ~/config
 
 **3.** Install and configure CLI tools
 ```sh
-$ sh ./install-cli-tools.sh
-$ sh ./configure-zsh.sh
+$ sh ./install-cli-tools.sh # installs Xcode Command Line Tools, Brew ++
+$ sh ./configure-zsh.sh     # Not needed anymore, xsh is already default
 $ sh ./install-dotfiles.sh
 ```
 
