@@ -17,6 +17,7 @@ bash-completion
 # ZSH
 zsh
 zsh-completions
+antigen
 
 # Install more recent versions of some OS X tools
 # vim --with-override-system-vi
@@ -43,7 +44,13 @@ postgresql
 # mtr - ping & traceroute. best.
 mtr
 jq
+fd
 wget
+autojump
+
+# Command line fuzzy finder
+fzf
+
 
 nginx
 

@@ -8,9 +8,9 @@ fi
 
 
 #### Download Prezto ####
-if [ ! -d "$HOME/.zprezto" ]; then
-  git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
-fi
+# if [ ! -d "$HOME/.zprezto" ]; then
+#   git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+# fi
 
 # Reload zsh config
 source ~/.zshrc

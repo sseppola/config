@@ -14,5 +14,11 @@ fi
 echo "→ Installing packages using Homebrew..."
 brew install $(cat brew/brewfile|grep -v "#")
 
+# Install fuzzy finder
+$(brew --prefix)/opt/fzf/install
+
+# Configure git to always use ssh
+git config --global --add url."git@github.com:".insteadOf "https://github.com/"
+
 gem install cocoapods
 
