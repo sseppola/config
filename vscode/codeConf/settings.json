@@ -1,25 +1,31 @@
 // Place your settings in this file to overwrite the default settings
 {
+  "editor.tabSize": 2,
   "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "Fira Code, Inconsolata, Menlo, Monaco, 'Courier New', monospace",
   "editor.minimap.enabled": false,
   "editor.snippetSuggestions": "top",
   "editor.maxTokenizationLineLength": 80000,
+  "editor.renderWhitespace": "trailing",
+
+  "explorer.openEditors.visible": 0,
+
+  "window.zoomLevel": 0,
+  "workbench.sideBar.location": "right",
+  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+
   "files.defaultLanguage": "markdown",
   "telemetry.enableTelemetry": false, 
-  "window.zoomLevel": 0,
-  "workbench.colorTheme": "Bluloco Light Italic",
-  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
   "search.quickOpen.history.filterSortOrder": "recency",
   "sort-imports.on-save": false,
   "sort-imports.default-sort-style": "module",
-  "editor.tabSize": 2,
   "[python]": {
     "editor.tabSize": 4
   },
   
   "javascript.referencesCodeLens.enabled": true,
-  "editor.fontFamily": "Fira Code, Inconsolata, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontLigatures": true,
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -48,6 +54,10 @@
     {
       "viewType": "hexEditor.hexedit",
       "filenamePattern": "*.hex"
+    },
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
     }
   ],
 
