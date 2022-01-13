@@ -29,6 +29,7 @@ antigen
 
 # git
 git
+git-delta
 diff-so-fancy
 
 # Node
