@@ -2,41 +2,36 @@
 
 ## Editors and developer tools
 visual-studio-code
-insomnia
+#insomnia
 iterm2
-ngrok
-java
-react-native-debugger
-google-cloud-sdk
-android-studio
-hammerspoon
-karabiner-elements
-anaconda
+#ngrok
+#react-native-debugger
+#google-cloud-sdk
+#android-studio
+#anaconda
 
 
 ## Design tools
-sketch
+#sketch
+figma
 imageoptim
 
 
 ## Browsers
 firefox
 google-chrome
-tor-browser
+#tor-browser
 
 
 ## File tools
 daisydisk
-onedrive
+#onedrive
 hazel
 carbon-copy-cloner
 
 
 # Communication tools
-skype
 slack
-caprine
-
 
 ## Util
 alfred
