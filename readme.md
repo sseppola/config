@@ -5,6 +5,7 @@ This was copied and then tweaked from [Diéssica Gurskas' dotfiles](https://gith
 Not every file in this repository is being directly used. Some files, such as editor settings, are here for backup purposes.
 
 ## TODOS:
+ - [ ] (setup_python.sh)[https://opensource.com/article/19/5/python-3-default-mac#what-to-do]
  - [ ] HammerSpoon config (~/.hammerspoon)
  - [ ] https://github.com/technicalpickles/homesick
  - [ ] Keybindings (eg. Alfred)

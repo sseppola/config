@@ -36,6 +36,7 @@
 
 [merge]
   tool = opendiff
+  conflictStyle = zdiff3
 
 # [diff]
 #   external
