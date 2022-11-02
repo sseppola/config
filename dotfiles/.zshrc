@@ -37,6 +37,9 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
+# Link nvm node (for Android Studio and other programs relying on default PATH)
+# sudo ln -s "$(which node)" /usr/local/bin/node
+
 # Zsh-completions
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
@@ -72,7 +75,7 @@ setopt HIST_FIND_NO_DUPS     # don't show duplicates when browsing history
 
 
 # Configure Android environment variables
-export ANDROID_HOME=$HOME/Library/Android/sdk
+# export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
@@ -111,3 +114,9 @@ unset __conda_setup
 
 # export PATH="/usr/local/opt/ruby@2.5/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
+eval "$(rbenv init -)"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+export PATH="/usr/local/opt/openjdk@11/bin:$PATH"

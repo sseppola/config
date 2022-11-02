@@ -33,7 +33,9 @@
 #   external
 
 [include]
-  path = ~/.gitlocal
+  path = ~/.gitlocal # <-- Set user email and name here
 
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+[push]
+	autoSetupRemote = true

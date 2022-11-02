@@ -18,7 +18,8 @@ brew install $(cat brew/brewfile|grep -v "#")
 $(brew --prefix)/opt/fzf/install
 
 # Configure git to always use ssh
-git config --global --add url."git@github.com:".insteadOf "https://github.com/"
+git config --global --add url."git@github.com:".insteadOf "https://github.com/" ## <-- this is not a good idea because it prevents git usage until ssh
+git config pull.rebase false # use merge strategy
 
 gem install cocoapods
 

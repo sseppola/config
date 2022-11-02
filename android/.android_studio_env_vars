@@ -1,0 +1,7 @@
+export ANDROID_HOME='/Volumes/Thoth_T7/Library/Android/sdk/'
+export ANDROID_SDK_ROOT='/Volumes/Thoth_T7/Library/Android/sdk/' # Deprecated in favor of ANDROID_HOME
+export ANDROID_AVD_HOME='/Volumes/Thoth_T7/Library/Android/avd/'
+
+launchctl setenv ANDROID_HOME "$ANDROID_HOME"
+launchctl setenv ANDROID_SDK_ROOT "$ANDROID_SDK_ROOT"
+launchctl setenv ANDROID_AVD_HOME "$ANDROID_AVD_HOME"

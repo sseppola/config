@@ -5,12 +5,17 @@ This was copied and then tweaked from [Diéssica Gurskas' dotfiles](https://gith
 Not every file in this repository is being directly used. Some files, such as editor settings, are here for backup purposes.
 
 ## TODOS:
+ - [ ] Simplify and restructure like https://github.com/paulmillr/dotfiles
+   - Current scripts throw a fit and requires a lot of manual work
  - [ ] HammerSpoon config (~/.hammerspoon)
  - [ ] https://github.com/technicalpickles/homesick
  - [ ] Keybindings (eg. Alfred)
  - [ ] Set up BTT
  - [ ] Get rid of `is already installed` warnings
  - [ ] Enable nightshift
+ - [ ] Split installations based on purpose (native dev, web dev, essential)
+   - [ ] Essentials: Firefox, 1Password, VS Code, iTerm 2, setup SSH with Github
+     - [ ] Alfred needs to be installed before dotfiles
 
 <!-- Inspiration for next time:
 - https://github.com/paulmillr/dotfiles
