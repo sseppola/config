@@ -29,6 +29,7 @@ antigen
 
 # git
 git
+git-delta
 diff-so-fancy
 
 # Node
@@ -53,5 +54,6 @@ fzf
 
 
 nginx
+svn # interact with svn repos, used by cask-fonts
 
-# imagemagick --with-webp
+imagemagick

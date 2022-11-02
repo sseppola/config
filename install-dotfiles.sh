@@ -13,6 +13,7 @@ fi
 echo "→ Configuring Git..."
 # Personal information in your .gitlocal, not .gitconfig!
 ln -s "$(pwd)/dotfiles/git/config" ~/.gitconfig
+ln -s "$(pwd)/dotfiles/git/.gitmessage" ~/.gitmessage
 # ln -s "$(pwd)/dotfiles/git/attributes ~/.gitattributes
 ln -s "$(pwd)/dotfiles/git/ignore_global" ~/.gitignore_global
 
