@@ -1,20 +1,18 @@
 // Place your settings in this file to overwrite the default settings
 {
   "editor.tabSize": 2,
-  "editor.fontSize": 14,
+  "editor.fontSize": 15,
   "editor.fontLigatures": true,
-  "editor.fontFamily": "Fira Code, Inconsolata, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "Iosevka, Fira Code, Inconsolata, Menlo, Monaco, 'Courier New', monospace",
   "editor.minimap.enabled": false,
-  "editor.snippetSuggestions": "top",
   "editor.maxTokenizationLineLength": 80000,
   "editor.renderWhitespace": "trailing",
 
   "explorer.openEditors.visible": 0,
-
-  "window.zoomLevel": 0,
   "workbench.sideBar.location": "right",
-  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.colorTheme": "Bluloco Light Italic",
   "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+  "workbench.editor.openPositioning": "last",
 
   "files.defaultLanguage": "markdown",
   "telemetry.enableTelemetry": false, 
@@ -48,19 +46,18 @@
     "Fastfile": "ruby",
     "Matchfile": "ruby",
     "*.css": "postcss",
-    "Snapfile": "ruby"
+    "Snapfile": "ruby",
+    ".workhorseenv": "shellscript",
+    ".mlenvrc": "shellscript",
+    ".gcloudignore": "shellscript"
   },
-  "workbench.editorAssociations": [
-    {
-      "viewType": "hexEditor.hexedit",
-      "filenamePattern": "*.hex"
-    },
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
+  "workbench.editorAssociations": {
+    "*.hex": "hexEditor.hexedit",
+    "*.ipynb": "jupyter.notebook.ipynb",
+    "*.wav": "hexEditor.hexedit"
+  },
 
+  "emmet.showExpandedAbbreviation": "never",
   "emmet.includeLanguages": {
     "postcss": "css"
   },
@@ -102,7 +99,12 @@
   "workbench.preferredDarkColorTheme": "Monokai Pro (Filter Spectrum)",
   "workbench.preferredLightColorTheme": "Bluloco Light Italic",
   "window.autoDetectColorScheme": true,
-  "diffEditor.ignoreTrimWhitespace": false,
   "python.defaultInterpreterPath": "python3",
-  "terminal.integrated.shell.osx": "/bin/zsh"
+  "python.formatting.provider": "black",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "eslint.alwaysShowStatus": true,
+  "editor.suggest.localityBonus": true,
+  "terminal.integrated.fontSize": 13,
+  "editor.stickyScroll.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false
 }

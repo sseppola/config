@@ -52,4 +52,30 @@
 		"}"
 		]
 	},
+	"React Native Icon": {
+		"prefix": "rnIcon",
+		"description": "React Native Icon",
+		"body": [
+			"import * as React from 'react';",
+			"import {View} from 'react-native';",
+			"import Svg, {Path, SvgProps} from 'react-native-svg';",
+			"",
+			"interface PropsT {",
+			"  size: number;",
+			"  color?: string;",
+			"}",
+			"",
+			"export function $1Icon(props: SvgProps & PropsT) {",
+			"  const {size, color = '#58BF62'} = props;",
+			"  return (",
+			"    <View style={{height: size, width: size, alignItems: 'center'}}>",
+			"      <Svg viewBox=\"0 0 24 24\" fill={'none'} stroke={color} {...props}>",
+			"        $2",
+			"      </Svg>",
+			"    </View>",
+			"  );",
+			"}"
+			
+		]
+	},
 }
