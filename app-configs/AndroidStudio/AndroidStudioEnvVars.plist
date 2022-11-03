@@ -7,7 +7,7 @@
     <key>ProgramArguments</key>
     <array>
         <string>/bin/bash</string>
-        <string>/Users/sindreseppola/.android_studio_env_vars</string>
+        <string>/Users/sindre/.android_studio_env_vars</string>
     </array>
     <key>RunAtLoad</key>
     <true/>

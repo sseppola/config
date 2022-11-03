@@ -17,7 +17,6 @@ bash-completion
 # ZSH
 zsh
 zsh-completions
-antigen
 
 # Install more recent versions of some OS X tools
 # vim --with-override-system-vi
@@ -33,13 +32,10 @@ git-delta
 diff-so-fancy
 
 # Node
-nvm
+# nvm # NOTE: nvm via brew is unsupported
 
 # Python
 pipenv
-
-# Databases
-postgresql
 
 # Misc
 # mtr - ping & traceroute. best.
@@ -52,8 +48,6 @@ autojump
 # Command line fuzzy finder
 fzf
 
-
-nginx
 svn # interact with svn repos, used by cask-fonts
 
 imagemagick

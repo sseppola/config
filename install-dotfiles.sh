@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-NODE_VERSION=12
+NODE_VERSION=16
 
 # Install Homebrew
 if test ! $(which brew)
 then
-  echo " → Installing Homebrew for package management..."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  echo " → Install Homebrew before running this command"
+  exit 1 
 fi
 
 

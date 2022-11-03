@@ -1,0 +1,56 @@
+[include]
+  path = ~/.gitlocal # <-- Set user email and name here
+
+[hub]
+  protocol = https
+
+[alias]
+  # --------------–-------–--------–--------–-------–--–-----
+  # Faster commands
+  # --------------–-------–--------–--------–-------–--–-----
+  co = checkout
+  cob = checkout -b
+
+  # --------------–-------–--------–--------–-------–--–-----
+  # More intuitive commands
+  # --------------–-------–--------–--------–-------–--–-----
+  # List tags
+  tags = tag -l
+  # List branches
+  branches = branch -a
+  # Reset (uncomitted) changes
+  abort = reset --hard HEAD
+  # Remove last commit
+  uncommit = reset HEAD~1
+  # Rewrite last commit message
+  recommit = commit --amend -m
+
+[core]
+  editor = code
+  excludesfile = ~/.gitignore
+  pager = delta
+
+[delta]
+  line-numbers = true
+  side-by-side = true
+  theme = GitHub
+
+[color]
+  ui = true
+
+[commit]
+  template = ~/.gitmessage
+
+[init]
+	defaultBranch = main
+
+[merge]
+  tool = opendiff
+  conflictstyle = diff3
+
+
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+
+[push]
+	autoSetupRemote = true

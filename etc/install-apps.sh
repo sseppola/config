@@ -6,8 +6,8 @@ sudo -v
 # Install Homebrew
 if test ! $(which brew)
 then
-  echo " → Installing Homebrew for package management..."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  echo " → Install Homebrew before running this command"
+  exit 1
 fi
 
 echo "→ Installing applications..."
@@ -21,4 +21,4 @@ brew tap homebrew/cask-fonts
 # Install all fonts listed in the fontfile
 brew install $(cat brew/fontfile|grep -v "#")
 
-source vscode/setup-vscode.sh
+# source vscode/setup-vscode.sh

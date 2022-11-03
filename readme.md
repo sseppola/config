@@ -1,5 +1,17 @@
 ## First and foremost
 This was copied and then tweaked from [Diéssica Gurskas' dotfiles](https://github.com/diessica/dotfiles), big thanks to her and everyone she followed.
+## Setup
+
+```
+# Step 1: Run the install script (downloads and installs everything)
+curl -L https://raw.githubusercontent.com/sseppola/config/master/install.sh | sh
+
+# Extra configs
+# 0. Connect 1 Password
+# 1. Set Terminal Profile manually to Monokai
+# 2. Set Alfred's preference directory
+# 3. Open Firefox and connect sync
+```
 
 ## Note
 Not every file in this repository is being directly used. Some files, such as editor settings, are here for backup purposes.
@@ -7,13 +19,8 @@ Not every file in this repository is being directly used. Some files, such as ed
 ## TODOS:
  - [ ] Simplify and restructure like https://github.com/paulmillr/dotfiles
    - Current scripts throw a fit and requires a lot of manual work
- - [ ] HammerSpoon config (~/.hammerspoon)
  - [ ] https://github.com/technicalpickles/homesick
  - [ ] Keybindings (eg. Alfred)
- - [ ] Set up BTT
- - [ ] Get rid of `is already installed` warnings
- - [ ] Enable nightshift
- - [ ] Split installations based on purpose (native dev, web dev, essential)
    - [ ] Essentials: Firefox, 1Password, VS Code, iTerm 2, setup SSH with Github
      - [ ] Alfred needs to be installed before dotfiles
 
