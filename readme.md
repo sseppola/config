@@ -3,14 +3,21 @@ This was copied and then tweaked from [Diéssica Gurskas' dotfiles](https://gith
 ## Setup
 
 ```
-# Step 1: Run the install script (downloads and installs everything)
+# Step: Run the install script (downloads and installs everything)
 curl -L https://raw.githubusercontent.com/sseppola/config/master/install.sh | sh
 
-# Extra configs
+# Step: Restart machine
+
+# Step: Configure apps
 # 0. Connect 1 Password
 # 1. Set Terminal Profile manually to Monokai
 # 2. Set Alfred's preference directory
 # 3. Open Firefox and connect sync
+# 4. Set up .gitlocal and signing with ssh key (TODO: write a guide)
+# 5. Configure touch pad
+#    - Exposé with 3 fingers down
+#    - Swipe page with 3 fingers
+#    - Swipe full screen apps with 4 fingers
 ```
 
 ## Note
