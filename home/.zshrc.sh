@@ -123,12 +123,14 @@ function gl() {
 
 # own git workflow in hy origin with Tower
 
+# Load autojump
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
+
 # ===============
 # Dev short-cuts.
 # ===============
 
 alias nr='npm run'
-alias j='autojump'
 
 # Ruby.
 # alias bx='bundle exec'
@@ -407,3 +409,22 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#
+# Load rbenv
+#
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+eval "$(rbenv init - zsh)"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/sindre/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/sindre/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/sindre/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/sindre/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+export PUPPETEER_EXECUTABLE_PATH=$(which chromium)

@@ -37,6 +37,10 @@ diff-so-fancy
 # Python
 pipenv
 
+# Clojure
+clojure/tools/clojure
+leiningen
+
 # Misc
 # mtr - ping & traceroute. best.
 mtr

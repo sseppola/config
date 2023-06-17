@@ -114,7 +114,7 @@ unset __conda_setup
 
 # export PATH="/usr/local/opt/ruby@2.5/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
-eval "$(rbenv init -)"
+eval "$(rbenv init - zsh)"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"

@@ -3,16 +3,17 @@
   "editor.tabSize": 2,
   "editor.fontSize": 15,
   "editor.fontLigatures": true,
-  "editor.fontFamily": "Iosevka, Fira Code, Inconsolata, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "FiraCode-Retina, Iosevka, Inconsolata, Menlo, Monaco, 'Courier New', monospace",
   "editor.minimap.enabled": false,
   "editor.maxTokenizationLineLength": 80000,
   "editor.renderWhitespace": "trailing",
 
-  "explorer.openEditors.visible": 0,
+  "explorer.openEditors.visible": 1,
   "workbench.sideBar.location": "right",
   "workbench.colorTheme": "Bluloco Light Italic",
   "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
   "workbench.editor.openPositioning": "last",
+  "diffEditor.diffAlgorithm": "advanced",
 
   "files.defaultLanguage": "markdown",
   "telemetry.enableTelemetry": false, 
@@ -40,7 +41,7 @@
   "files.associations": {
     "*.react.js": "javascriptreact",
     "*.jsx": "javascriptreact",
-    "*.svelte": "html",
+    "*.svelte": "svelte",
     "*.pcss": "postcss",
     "Appfile": "ruby",
     "Fastfile": "ruby",
@@ -80,7 +81,7 @@
   },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -91,6 +92,7 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "svelte.enable-ts-plugin": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.preferences.importModuleSpecifier": "relative",
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -106,5 +108,8 @@
   "editor.suggest.localityBonus": true,
   "terminal.integrated.fontSize": 13,
   "editor.stickyScroll.enabled": true,
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "cSpell.userWords": [
+    "Sindre"
+  ]
 }

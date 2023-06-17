@@ -53,3 +53,9 @@ if [ "$(nvm current)" == "none" ]; then
   npm install -g $(cat misc/npm_globals|grep -v "#")
 fi
 
+# Install SDKman (java)
+if [ ! -d "$HOME/.sdkman" ]; then
+  curl -s "https://get.sdkman.io" | bash
+  source "$HOME/.sdkman/bin/sdkman-init.sh"
+  sdk install java 11.0.17-ms
+fi
