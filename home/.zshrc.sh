@@ -37,6 +37,9 @@ alias cl='clear'
 # Disable sertificate check for wget.
 # alias wget='wget --no-check-certificate'
 
+# Tailscale
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+
 # Some MacOS-only stuff.
 if [[ "$OSTYPE" == darwin* ]]; then
   # Short-cuts for copy-paste.
