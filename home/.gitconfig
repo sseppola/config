@@ -26,7 +26,7 @@
   recommit = commit --amend -m
 
 [core]
-  editor = code
+	editor = nano
   excludesfile = ~/.gitignore
   pager = delta
 
