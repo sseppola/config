@@ -37,6 +37,8 @@ alias cl='clear'
 # Disable sertificate check for wget.
 # alias wget='wget --no-check-certificate'
 
+alias chrome_debug="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222"
+
 # Tailscale
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 
@@ -425,9 +427,18 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/sindre/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/sindre/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/sindre/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/sindre/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
 export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 export PUPPETEER_EXECUTABLE_PATH=$(which chromium)
+
+# pnpm
+export PNPM_HOME="/Users/sindre/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+export PATH="$HOME/.emacs.d/bin:$PATH"
