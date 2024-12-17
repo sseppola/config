@@ -44,6 +44,9 @@ ln -s "$(pwd)/dotfiles/.zshrc" ~/.zshrc
 ln -s "$(pwd)/dotfiles/.zpreztorc" ~/.zpreztorc
 source ./setup-zsh.sh
 
+ln -s "$(pwd)/emacs/config.el ~/.emacs.d/config.el"
+ln -s "$(pwd)/emacs/packages.el ~/.emacs.d/packages.el"
+
 # Set macOS defaults
 echo "→ Set macOS defaults... (It'll shut down Terminal!)"
 sh misc/macos
